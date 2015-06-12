@@ -1,0 +1,23 @@
+{
+  "name": "gh-pages-bootstrap",
+  "version": "1.0.0",
+  "description": "Locally recreate the URL scheme you'd get on GitHub Pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strugee/gh-pages-bootstrap.git"
+  },
+  "keywords": [
+    "git",
+    "github"
+  ],
+  "author": "Alex Jordan <alex@strugee.net>",
+  "license": "LGPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/strugee/gh-pages-bootstrap/issues"
+  },
+  "homepage": "https://github.com/strugee/gh-pages-bootstrap#readme"
+}
