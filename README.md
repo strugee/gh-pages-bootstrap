@@ -1,6 +1,6 @@
 # gh-pages-bootstrap
 
-[![NPM](https://nodei.co/npm/@strugee/gh-pages-bootstrap.png)](https://npmjs.org/package/@strugee/gh-pages-bootstrap)
+[![NPM](https://nodei.co/npm/gh-pages-bootstrap.png)](https://npmjs.org/package/gh-pages-bootstrap)
 
 ## About
 
