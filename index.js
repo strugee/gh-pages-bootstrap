@@ -2,7 +2,7 @@ var https = require('https');
 var spawn = require('child_process').spawn;
 
 module.exports = function(user, auth_token, callback) {
-	https.get({hostname: 'api.github.com', path: '/users/strugee/repos', headers: {'User-Agent': 'gh-pages-bootstrap/1.0.0', 'Authorization': 'token ' + auth_token}}, function(res) {
+	https.get({hostname: 'api.github.com', path: '/users/' + user + '/repos', headers: {'User-Agent': 'gh-pages-bootstrap/1.0.0', 'Authorization': 'token ' + auth_token}}, function(res) {
 		var repos;
 		var reposRaw = '';
 		
@@ -16,7 +16,7 @@ module.exports = function(user, auth_token, callback) {
 			repos.forEach(function(repo) {
 				https.get({
 					hostname: 'api.github.com',
-					path: '/repos/strugee/' + repo.name + '/branches',
+					path: '/repos/' + user + '/' + repo.name + '/branches',
 					headers: {'User-Agent': 'gh-pages-bootstrap/1.0.0', Authorization: 'token ' + auth_token}
 				}, function(res) {
 					var branches;
@@ -31,7 +31,7 @@ module.exports = function(user, auth_token, callback) {
 						for (var j in branches) {
 							var branch = branches[j];
 							if (branch.name === 'gh-pages') {
-								spawn('git', ['clone', '--branch', 'gh-pages', 'git://github.com/strugee/' + repo.name]).on('error', function(err) {
+								spawn('git', ['clone', '--branch', 'gh-pages', 'git://github.com/' + user + '/' + repo.name]).on('error', function(err) {
 									callback(err);
 								});
 								console.log('Spawned git process for ' + repo.name);
