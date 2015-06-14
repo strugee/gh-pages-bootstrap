@@ -8,7 +8,7 @@
   },
   "bin": {
     "gh-pages-bootstrap": "./cli.js"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/strugee/gh-pages-bootstrap.git"
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/strugee/gh-pages-bootstrap/issues"
   },
-  "homepage": "https://github.com/strugee/gh-pages-bootstrap#readme"
+  "homepage": "https://github.com/strugee/gh-pages-bootstrap#readme",
+  "dependencies": {
+    "ghauth": "^3.0.0"
+  }
 }
