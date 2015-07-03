@@ -26,16 +26,16 @@ Or as a CLI tool:
 
 As a module:
 
-    ```js
-    var bootstrap = require('gh-pages-bootstrap');
-    
-    var user = 'someone'; // GitHub user
-    var token = 'a1b2c3d4e5f6g7h8i9j0'; // GitHub OAuth2 token
-    
-    ghpages(user, token, function(err) {
-    	throw err;
-    });
-	```
+``` js
+var bootstrap = require('gh-pages-bootstrap');
+
+var user = 'someone'; // GitHub user
+var token = 'a1b2c3d4e5f6g7h8i9j0'; // GitHub OAuth2 token
+
+ghpages(user, token, function(err) {
+	throw err;
+});
+```
 
 On the commandline:
 
