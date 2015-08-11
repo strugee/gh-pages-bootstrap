@@ -7,3 +7,7 @@
 ## 1.0.1 "I hear you like typos"
 
 * Fix a URL in the README that caused the npm badge to not load
+
+## 1.1.0 "My Hobby: Refactoring"
+
+* Factor out the branch search logic into its own module - `gh-search-branch`
