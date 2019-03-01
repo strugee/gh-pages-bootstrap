@@ -45,7 +45,7 @@ This will prompt you for your GitHub username and password. If you run it a seco
 
 ## Author
 
-Alex Jordan (@strugee on GitHub)
+AJ Jordan (@strugee on GitHub)
 
 ## License
 
