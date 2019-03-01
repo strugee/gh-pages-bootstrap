@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var ghauth = require('ghauth');
 var ghpages = require('./index.js');
 
