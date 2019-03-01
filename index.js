@@ -1,4 +1,3 @@
-var https = require('https');
 var spawn = require('child_process').spawn;
 var search_branch = require('gh-search-branch');
 var pkg = require('./package.json');
