@@ -25,6 +25,6 @@
   "homepage": "https://github.com/strugee/gh-pages-bootstrap#readme",
   "dependencies": {
     "gh-search-branch": "^1.0.0",
-    "ghauth": "^3.0.0"
+    "ghauth": "^4.0.0"
   }
 }
